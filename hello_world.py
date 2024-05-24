@@ -14,6 +14,7 @@
 # 3) Run pyspark script for streaming data
 # 4) send data using command: ncat -l 9999
 # 5) check output in spark session console
+# Note: Kafka is not being used here. We are just reading data from a socket using ncat, not using kafka!!
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import split, explode, count, lit
